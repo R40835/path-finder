@@ -9,8 +9,8 @@ Once you've launched the program:
 
 # Results
 <div style="display: flex; justify-content: center;">
-  <img src="https://github.com/R40835/path-finder/blob/main/results/heuristic1.PNG?raw=true" style="width: 32%;">
-  <img src="https://github.com/R40835/path-finder/blob/main/results/heuristic2.PNG?raw=true" style="width: 32%;">
-  <img src="https://github.com/R40835/path-finder/blob/main/results/heuristic3.PNG?raw=true" style="width: 32%;">
+  <img src="https://github.com/R40835/path-finder/blob/main/assets/heuristic1.PNG?raw=true" style="width: 32%;">
+  <img src="https://github.com/R40835/path-finder/blob/main/assets/heuristic2.PNG?raw=true" style="width: 32%;">
+  <img src="https://github.com/R40835/path-finder/blob/main/assets/heuristic3.PNG?raw=true" style="width: 32%;">
 
 </div>
