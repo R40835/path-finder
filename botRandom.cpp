@@ -4,7 +4,7 @@
 //(c) Patrick Dickinson, University of Lincoln, School of Computer Science, 2020
 //======================================================================================
 
-#include "bots.h"
+#include "bots.hpp"
 #include "stdlib.h"
 
 void cBotRandom::ChooseNextGridPosition() 

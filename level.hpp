@@ -4,7 +4,7 @@
 //
 //(c) Patrick Dickinson, University of Lincoln, School of Computer Science, 2020
 //======================================================================================
-#include "game.h"
+#include "game.hpp" 
 
 //======================================================================================
 //Level class

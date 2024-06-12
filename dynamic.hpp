@@ -8,7 +8,7 @@
 //(c) Patrick Dickinson, University of Lincoln, School of Computer Science, 2020
 //======================================================================================
 
-#include "level.h"
+#include "level.hpp" 
 
 class cDynamic
 {

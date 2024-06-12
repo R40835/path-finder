@@ -4,10 +4,10 @@
 //(c) Patrick Dickinson, University of Lincoln, School of Computer Science, 2020
 //======================================================================================
 
-#include "game.h"
-#include "level.h"
-#include "dynamic.h"
-#include "bots.h"
+#include "game.hpp"
+#include "level.hpp"
+#include "dynamic.hpp"
+#include "bots.hpp"
 
 
 //======================================================================================
@@ -69,7 +69,7 @@ int main(int argc, char* argv[])
     //======================================================================================
     //Load the map and set target position
     //======================================================================================
-    gLevel.Load("maps/1.txt");
+    gLevel.Load("maps/3.txt");
     gTarget.SetCurrent(30, 20, gLevel);
 
     //======================================================================================
@@ -127,9 +127,9 @@ int main(int argc, char* argv[])
         if (keystate[SDL_SCANCODE_LEFT]) offsetX -= 1;
         if (keystate[SDL_SCANCODE_RIGHT]) offsetX += 1;
         {
-            // Displaying Manhattan distance by clicking on P
+            // Displaying Manhattan distance by clicking on A
             static bool p_down = false;
-            if (keystate[SDL_SCANCODE_P])
+            if (keystate[SDL_SCANCODE_A])
             {
                 if (!p_down)
                 {
@@ -142,9 +142,9 @@ int main(int argc, char* argv[])
             else { p_down = false; }
         }
         {
-            // Displaying Euclidean distance by clicking on A
+            // Displaying Euclidean distance by clicking on B
             static bool a_down = false;
-            if (keystate[SDL_SCANCODE_A])
+            if (keystate[SDL_SCANCODE_B])
             {
                 if (!a_down)
                 {
@@ -156,9 +156,9 @@ int main(int argc, char* argv[])
             else { a_down = false; }
         }
         {
-            // Displaying Diagonal distance by clicking on B
+            // Displaying Diagonal distance by clicking on C
             static bool b_down = false;
-            if (keystate[SDL_SCANCODE_B])
+            if (keystate[SDL_SCANCODE_C])
             {
                 if (!b_down)
                 {

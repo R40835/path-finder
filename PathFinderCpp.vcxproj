@@ -135,11 +135,11 @@
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="botbase.h" />
-    <ClInclude Include="bots.h" />
-    <ClInclude Include="game.h" />
-    <ClInclude Include="dynamic.h" />
-    <ClInclude Include="level.h" />
+    <ClInclude Include="botbase.hpp" />
+    <ClInclude Include="bots.hpp" />
+    <ClInclude Include="game.hpp" />
+    <ClInclude Include="dynamic.hpp" />
+    <ClInclude Include="level.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -6,7 +6,7 @@
 //(c) Patrick Dickinson, University of Lincoln, School of Computer Science, 2020
 //======================================================================================
 
-#include "dynamic.h"
+#include "dynamic.hpp" 
 
 class cBotBase : public cDynamic
 {

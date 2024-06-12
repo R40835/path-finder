@@ -3,8 +3,8 @@
 //
 //(c) Patrick Dickinson, University of Lincoln, School of Computer Science, 2020
 //======================================================================================
-#include "level.h"
-#include "bots.h"
+#include "level.hpp"
+#include "bots.hpp"
 #include <stdio.h>
 
 //======================================================================================

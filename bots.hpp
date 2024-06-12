@@ -6,7 +6,7 @@
 //(c) Patrick Dickinson, University of Lincoln, School of Computer Science, 2020
 //======================================================================================
 
-#include "botbase.h"
+#include "botbase.hpp" 
 
 
 class cBotRandom : public cBotBase
@@ -14,25 +14,25 @@ class cBotRandom : public cBotBase
 	virtual void ChooseNextGridPosition();
 };
 
-// creating Dijkstra class
 
 class cDijkstra
 {
 public:
-	// declaring arrays that we'll use later on
-
 	bool closed[GRIDWIDTH][GRIDHEIGHT];
 	float cost[GRIDWIDTH][GRIDHEIGHT];
 	int linkX[GRIDWIDTH][GRIDHEIGHT];
 	int linkY[GRIDWIDTH][GRIDHEIGHT];
 	bool inPath[GRIDWIDTH][GRIDHEIGHT];
+	int path_coordinates[100][2];
 	bool completed;
 
-	// method
+	// methods
 	virtual void Build(cBotBase& bot);
+	int TracePath(cBotBase& bot);  
+	void UpdateNeighbors(int min_x, int min_y, float base_cost); 
 
 	// constructor
-	cDijkstra() { completed = false; }
+	cDijkstra();
 };
 
 // this class use manhattan by clicking on P
@@ -40,8 +40,6 @@ class cAStar : public cDijkstra
 {
 public:
 	virtual void Build(cBotBase& bot);
-	// our array to store the path
-	int path_coordinates[100][2];
 	// initialising path length as 0
 	int max_length = 0;
 };
@@ -57,8 +55,6 @@ class cAStar2 : public cDijkstra
 {
 public:
 	virtual void Build(cBotBase& bot);
-	// our array to store the path
-	int path_coordinates[100][2];
 	// initialising path length as 0
 	int max_length = 0;
 };
@@ -69,14 +65,11 @@ class cAStar3 : public cDijkstra
 {
 public:
 	virtual void Build(cBotBase& bot);
-	// our array to store the path
-	int path_coordinates[100][2];
 	// initialising path length as 0
 	int max_length = 0;
 };
 
 // extern references:
-
 extern cDijkstra gDijkstra;
 extern cAStar gAStar;
 extern cAStar2 gAStar2;
